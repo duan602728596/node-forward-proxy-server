@@ -3,9 +3,13 @@
   "description": "node正向代理服务器",
   "scripts": {
     "server": "node lib/index.js",
+    "pm2:server": "pm2 start lib/index.js",
     "eslint": "eslint ./ --fix"
   },
   "main": "lib/index.js",
+  "dependencies": {
+    "pm2": "^3.5.0"
+  },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "commitizen": "^3.0.7",
